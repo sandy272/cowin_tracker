@@ -1,7 +1,7 @@
 import requests
 import prettytable
 import os
-from playsound import playsound
+#from playsound import playsound
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -38,7 +38,7 @@ while True:
                         table.add_row([centers['name'], centers['center_id'], centers['sessions'][0]['date'],
                                        centers['sessions'][0]['available_capacity'], centers['pincode']])
                         #print(table)
-                        playsound("cowin_alert.mp3")
+                        #playsound("cowin_alert.mp3")
                         # os.remove('center.mp3')
     except:
         pass
